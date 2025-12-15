@@ -7,7 +7,7 @@ export const Clients = () => {
             <div className="col-lg-4 ms-auto">
               <div className="img-box sub_img-box">
                 <img
-                  src="/images/client-chocolate.png"
+                  src="images/client-chocolate.png"
                   alt=""
                   className="img-fluid"
                 />
@@ -28,7 +28,7 @@ export const Clients = () => {
                       <div className="box">
                         <div className="img-box">
                           <img
-                            src="/images/client-img.jpg"
+                            src="images/client-img.jpg"
                             alt=""
                             className="img-fluid"
                           />
@@ -59,7 +59,7 @@ export const Clients = () => {
                       <div className="box">
                         <div className="img-box">
                           <img
-                            src="/images/client-img.jpg"
+                            src="images/client-img.jpg"
                             alt=""
                             className="img-fluid"
                           />
@@ -90,7 +90,7 @@ export const Clients = () => {
                       <div className="box">
                         <div className="img-box">
                           <img
-                            src="/images/client-img.jpg"
+                            src="images/client-img.jpg"
                             alt=""
                             className="img-fluid"
                           />

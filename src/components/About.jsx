@@ -19,7 +19,7 @@ export const About = () => {
                 <a href="#" onClick={(e) => e.preventDefault()}>
                   <span>Read More</span>
                   <img
-                    src="/images/color-arrow.png"
+                    src="images/color-arrow.png"
                     alt="arrow"
                     className="img-fluid"
                   />
@@ -29,7 +29,7 @@ export const About = () => {
             <div className="col-md-6">
               <div className="img-box">
                 <img
-                  src="/images/about-img.png"
+                  src="images/about-img.png"
                   alt="aboutUs"
                   className="img-fluid"
                 />

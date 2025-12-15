@@ -46,13 +46,13 @@ export const Info = () => {
                 <h4>Instagram</h4>
                 <div className="insta_box">
                   <div className="img-box">
-                    <img src="/images/insta-img.png" alt="" />
+                    <img src="images/insta-img.png" alt="" />
                   </div>
                   <p>long established fact that a reader</p>
                 </div>
                 <div className="insta_box">
                   <div className="img-box">
-                    <img src="/images/insta-img.png" alt="" />
+                    <img src="images/insta-img.png" alt="" />
                   </div>
                   <p>long established fact that a reader</p>
                 </div>

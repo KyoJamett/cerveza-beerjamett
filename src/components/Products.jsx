@@ -15,11 +15,7 @@ export const Products = () => {
           <div className="chocolate_container">
             <div className="box">
               <div className="img-box">
-                <img
-                  src="/images/chocolate1.png"
-                  alt=""
-                  className="img-fluid"
-                />
+                <img src="images/chocolate1.png" alt="" className="img-fluid" />
               </div>
               <div className="detail-box">
                 <h6>
@@ -31,11 +27,7 @@ export const Products = () => {
             </div>
             <div className="box">
               <div className="img-box">
-                <img
-                  src="/images/chocolate2.png"
-                  alt=""
-                  className="img-fluid"
-                />
+                <img src="images/chocolate2.png" alt="" className="img-fluid" />
               </div>
               <div className="detail-box">
                 <h6>
@@ -47,11 +39,7 @@ export const Products = () => {
             </div>
             <div className="box">
               <div className="img-box">
-                <img
-                  src="/images/chocolate3.png"
-                  alt=""
-                  className="img-fluid"
-                />
+                <img src="images/chocolate3.png" alt="" className="img-fluid" />
               </div>
               <div className="detail-box">
                 <h6>
@@ -63,11 +51,7 @@ export const Products = () => {
             </div>
             <div className="box">
               <div className="img-box">
-                <img
-                  src="/images/chocolate1.png"
-                  alt=""
-                  className="img-fluid"
-                />
+                <img src="images/chocolate1.png" alt="" className="img-fluid" />
               </div>
               <div className="detail-box">
                 <h6>
@@ -79,11 +63,7 @@ export const Products = () => {
             </div>
             <div className="box">
               <div className="img-box">
-                <img
-                  src="/images/chocolate2.png"
-                  alt=""
-                  className="img-fluid"
-                />
+                <img src="images/chocolate2.png" alt="" className="img-fluid" />
               </div>
               <div className="detail-box">
                 <h6>
@@ -95,11 +75,7 @@ export const Products = () => {
             </div>
             <div className="box">
               <div className="img-box">
-                <img
-                  src="/images/chocolate3.png"
-                  alt=""
-                  className="img-fluid"
-                />
+                <img src="images/chocolate3.png" alt="" className="img-fluid" />
               </div>
               <div className="detail-box">
                 <h6>
