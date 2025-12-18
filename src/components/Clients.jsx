@@ -1,4 +1,72 @@
+import Slider from "react-slick";
+
+const clients = [
+  {
+    name: "Gero Miliya",
+    desc: "long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it haslong established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it haslong established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has",
+    img: "images/client-img.jpg",
+  },
+  {
+    name: "Gero Miliya",
+    desc: "long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it haslong established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it haslong established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has",
+    img: "images/client-img.jpg",
+  },
+  {
+    name: "Gero Miliya",
+    desc: "long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it haslong established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it haslong established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has",
+    img: "images/client-img.jpg",
+  },
+];
+
+const ClientCard = ({ client }) => {
+  return (
+    <div className="box">
+      <div className="img-box">
+        <img src={client.img} alt={client.name} className="img-fluid" />
+      </div>
+      <div className="detail-box">
+        <h4>{client.name}</h4>
+        <p>{client.desc}</p>
+        <i className="fa fa-quote-left" aria-hidden="true"></i>
+      </div>
+    </div>
+  );
+};
+
+const CustomPrevArrow = (props) => {
+  const { onClick } = props;
+  return (
+    <button className="carousel-control-prev" onClick={onClick}>
+      <i className="fa fa-arrow-left" aria-hidden="true"></i>
+      <span className="visually-hidden">Previous</span>
+    </button>
+  );
+};
+
+const CustomNextArrow = (props) => {
+  const { onClick } = props;
+  return (
+    <button className="carousel-control-next" onClick={onClick}>
+      <i className="fa fa-arrow-right" aria-hidden="true"></i>
+      <span className="visually-hidden">Next</span>
+    </button>
+  );
+};
+
 export const Clients = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    pauseOnHover: true,
+    arrows: true,
+    prevArrow: <CustomPrevArrow />,
+    nextArrow: <CustomNextArrow />,
+  };
   return (
     <>
       <section className="client_section">
@@ -18,127 +86,11 @@ export const Clients = () => {
                 <div className="heading_container">
                   <h2>Testimonial</h2>
                 </div>
-                <div
-                  id="customCarousel2"
-                  className="carousel slide"
-                  data-bs-ride="carousel"
-                >
-                  <div className="carousel-inner">
-                    <div className="carousel-item active">
-                      <div className="box">
-                        <div className="img-box">
-                          <img
-                            src="images/client-img.jpg"
-                            alt=""
-                            className="img-fluid"
-                          />
-                        </div>
-                        <div className="detail-box">
-                          <h4>Gero Miliya</h4>
-                          <p>
-                            long established fact that a reader will be
-                            distracted by the readable content of a page when
-                            looking at its layout. The point of using Lorem
-                            Ipsum is that it haslong established fact that a
-                            reader will be distracted by the readable content of
-                            a page when looking at its layout. The point of
-                            using Lorem Ipsum is that it haslong established
-                            fact that a reader will be distracted by the
-                            readable content of a page when looking at its
-                            layout. The point of using Lorem Ipsum is that it
-                            has
-                          </p>
-                          <i
-                            className="fa fa-quote-left"
-                            aria-hidden="true"
-                          ></i>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="carousel-item">
-                      <div className="box">
-                        <div className="img-box">
-                          <img
-                            src="images/client-img.jpg"
-                            alt=""
-                            className="img-fluid"
-                          />
-                        </div>
-                        <div className="detail-box">
-                          <h4>Gero Miliya</h4>
-                          <p>
-                            long established fact that a reader will be
-                            distracted by the readable content of a page when
-                            looking at its layout. The point of using Lorem
-                            Ipsum is that it haslong established fact that a
-                            reader will be distracted by the readable content of
-                            a page when looking at its layout. The point of
-                            using Lorem Ipsum is that it haslong established
-                            fact that a reader will be distracted by the
-                            readable content of a page when looking at its
-                            layout. The point of using Lorem Ipsum is that it
-                            has
-                          </p>
-                          <i
-                            className="fa fa-quote-left"
-                            aria-hidden="true"
-                          ></i>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="carousel-item">
-                      <div className="box">
-                        <div className="img-box">
-                          <img
-                            src="images/client-img.jpg"
-                            alt=""
-                            className="img-fluid"
-                          />
-                        </div>
-                        <div className="detail-box">
-                          <h4>Gero Miliya</h4>
-                          <p>
-                            long established fact that a reader will be
-                            distracted by the readable content of a page when
-                            looking at its layout. The point of using Lorem
-                            Ipsum is that it haslong established fact that a
-                            reader will be distracted by the readable content of
-                            a page when looking at its layout. The point of
-                            using Lorem Ipsum is that it haslong established
-                            fact that a reader will be distracted by the
-                            readable content of a page when looking at its
-                            layout. The point of using Lorem Ipsum is that it
-                            has
-                          </p>
-                          <i
-                            className="fa fa-quote-left"
-                            aria-hidden="true"
-                          ></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="carousel_btn-box">
-                    <a
-                      className="carousel-control-prev"
-                      href="#customCarousel2"
-                      role="button"
-                      data-bs-slide="prev"
-                    >
-                      <i className="fa fa-arrow-left" aria-hidden="true"></i>
-                      <span className="visually-hidden">Previous</span>
-                    </a>
-                    <a
-                      className="carousel-control-next"
-                      href="#customCarousel2"
-                      role="button"
-                      data-bs-slide="next"
-                    >
-                      <i className="fa fa-arrow-right" aria-hidden="true"></i>
-                      <span className="visually-hidden">Next</span>
-                    </a>
-                  </div>
-                </div>
+                <Slider {...settings}>
+                  {clients.map((client) => {
+                    return <ClientCard key={client.key} client={client} />;
+                  })}
+                </Slider>
               </div>
             </div>
           </div>
