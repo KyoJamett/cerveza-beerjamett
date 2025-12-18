@@ -1,105 +1,107 @@
-export const Carousel = () => {
+import Slider from "react-slick";
+import { Link } from "react-router-dom";
+
+const items = [
+  {
+    name: "Chocolate",
+    nameSpan: "Yummy",
+    img: "images/slider-img.png",
+  },
+  {
+    name: "Chocolate",
+    nameSpan: "Yummy",
+    img: "images/slider-img.png",
+  },
+  {
+    name: "Chocolate",
+    nameSpan: "Yummy",
+    img: "images/slider-img.png",
+  },
+];
+
+const CarouselCard = ({ item }) => {
   return (
-    <>
-      <section className="slider_section ">
-        <div
-          id="customCarousel1"
-          className="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <div className="container">
-                <div className="row">
-                  <div className="col-md-6">
-                    <div className="detail_box">
-                      <h1>
-                        Chocolate <br />
-                        <span>Yummy</span>
-                      </h1>
-                      <a href="#">
-                        <span>Read More</span>
-                        <img src="images/white-arrow.png" alt="" />
-                      </a>
-                    </div>
-                  </div>
-                  <div className="col-md-4 ms-auto">
-                    <div className="img-box">
-                      <img src="images/slider-img.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="carousel-item ">
-              <div className="container">
-                <div className="row">
-                  <div className="col-md-6">
-                    <div className="detail_box">
-                      <h1>
-                        Chocolate <br />
-                        <span>Yummy</span>
-                      </h1>
-                      <a href="#">
-                        <span>Read More</span>
-                        <img src="images/white-arrow.png" alt="" />
-                      </a>
-                    </div>
-                  </div>
-                  <div className="col-md-4 ms-auto">
-                    <div className="img-box">
-                      <img src="images/slider-img.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="carousel-item ">
-              <div className="container">
-                <div className="row">
-                  <div className="col-md-6">
-                    <div className="detail_box">
-                      <h1>
-                        Chocolate <br />
-                        <span>Yummy</span>
-                      </h1>
-                      <a href="#">
-                        <span>Read More</span>
-                        <img src="images/white-arrow.png" alt="" />
-                      </a>
-                    </div>
-                  </div>
-                  <div className="col-md-4 ms-auto">
-                    <div className="img-box">
-                      <img src="images/slider-img.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <div className="container">
+      <div className="row">
+        <div className="col-md-6">
+          <div className="detail_box">
+            <h1>
+              {item.name} <br />
+              <span>{item.nameSpan}</span>
+            </h1>
+            <Link to="/read-more">
+              <span>Read More</span>
+              <img src="images/white-arrow.png" alt="arrow" />
+            </Link>
           </div>
         </div>
-        <div className="carousel_btn-box">
-          <a
-            className="carousel-control-prev"
-            href="#customCarousel1"
-            role="button"
-            data-bs-slide="prev"
-          >
-            <i className="fa fa-arrow-left" aria-hidden="true"></i>
-            <span className="visually-hidden">Previous</span>
-          </a>
-          <a
-            className="carousel-control-next"
-            href="#customCarousel1"
-            role="button"
-            data-bs-slide="next"
-          >
-            <i className="fa fa-arrow-right" aria-hidden="true"></i>
-            <span className="visually-hidden">Next</span>
-          </a>
+        <div className="col-md-4 ms-auto">
+          <div className="img-box">
+            <img src={item.img} alt={item.name} />
+          </div>
         </div>
-      </section>
-    </>
+      </div>
+    </div>
+  );
+};
+
+const CustomPrevArrow = ({ onClick }) => {
+  return (
+    <button
+      className="carousel-control-prev"
+      onClick={onClick}
+      type="button"
+      aria-label="Previous slide"
+    >
+      <i className="fa fa-arrow-left" aria-hidden="true"></i>
+      <span className="visually-hidden">Previous</span>
+    </button>
+  );
+};
+
+const CustomNextArrow = ({ onClick }) => {
+  return (
+    <button
+      className="carousel-control-next"
+      onClick={onClick}
+      type="button"
+      aria-label="Next slide"
+    >
+      <i className="fa fa-arrow-right" aria-hidden="true"></i>
+      <span className="visually-hidden">Next</span>
+    </button>
+  );
+};
+
+export const Carousel = () => {
+  const settings = {
+    dots: false, // Cambiado a false para mantener diseño original
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    pauseOnHover: true,
+    arrows: true,
+    prevArrow: <CustomPrevArrow />,
+    nextArrow: <CustomNextArrow />,
+  };
+
+  return (
+    <section className="slider_section">
+      <div id="customCarousel1">
+        <Slider {...settings}>
+          {items.map((item) => (
+            <CarouselCard key={item.id} item={item} />
+          ))}
+        </Slider>
+      </div>
+
+      {/* Botones de navegación en su posición original */}
+      <div className="carousel_btn-box">
+        {/* Los botones se renderizarán aquí automáticamente por Slick */}
+      </div>
+    </section>
   );
 };
