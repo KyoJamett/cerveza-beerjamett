@@ -261,6 +261,7 @@ a:focus {
   background-size: cover;
   background-position: top;
   color: #ffffff;
+  padding: 75px 0 145px 0;
 }
 
 .slider_section .row {
@@ -1037,4 +1038,19 @@ a:focus {
 
 .footer_section a {
   color: inherit;
+}
+
+/* Fixes para React Slick */
+.slider_section .slick-list,
+.slider_section .slick-track {
+  height: 100%;
+}
+
+.slider_section .slick-slide {
+  height: auto;
+}
+
+.slider_section .slick-slide > div {
+  display: flex;
+  align-items: center;
 }
