@@ -9,7 +9,7 @@ $textCol: #6c6c6c;
 }
 
 @mixin second-font {
-  font-family: "SnellBT Regular", sans-serif;
+  font-family: "Pacifico", cursive;
 }
 
 @mixin hero_btn($col1, $col2, $pad1, $pad2, $bRadius) {
@@ -74,18 +74,6 @@ body {
     font-weight: bold;
     font-size: 2.5rem;
   }
-}
-
-@font-face {
-  font-family: "SnellBT Regular";
-  src: url(../fonts/SnellBT-Regular.otf);
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "SnellBT Bold";
-  src: url(../fonts/SnellBT-Bold.otf);
-  font-weight: 700;
 }
 
 a,
