@@ -5,7 +5,11 @@ export const Navbar = () => {
         <div className="container-fluid">
           <nav className="navbar navbar-expand-lg custom_nav-container ">
             <a className="navbar-brand" href="index.html">
-              BeerJamett
+              <img
+                src="images/logo.png"
+                alt="BeerJamett"
+                className="navbar-logo"
+              />
             </a>
             <button
               className="navbar-toggler"

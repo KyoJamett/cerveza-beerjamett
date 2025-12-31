@@ -122,6 +122,8 @@ a:focus {
 }
 
 .header_section {
+  background-color: #fedf1b;
+
   .container-fluid {
     padding-right: 25px;
     padding-left: 25px;
@@ -129,6 +131,14 @@ a:focus {
 
   .nav_container {
     margin: 0 auto;
+  }
+
+  .navbar-brand {
+    .navbar-logo {
+      height: 80px;
+      width: auto;
+      object-fit: contain;
+    }
   }
 }
 
