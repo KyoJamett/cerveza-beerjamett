@@ -51,19 +51,6 @@ export const Navbar = () => {
                   </a>
                 </li>
               </ul>
-              <div className="quote_btn-container">
-                <form className="d-flex">
-                  <button
-                    className="btn  my-2 my-sm-0 nav_search-btn"
-                    type="submit"
-                  >
-                    <i className="fa fa-search" aria-hidden="true"></i>
-                  </button>
-                </form>
-                <a href="">
-                  <i className="fa fa-user" aria-hidden="true"></i>
-                </a>
-              </div>
             </div>
           </nav>
         </div>

@@ -284,7 +284,7 @@ a:focus {
     left: 0;
     width: 75%;
     height: 100%;
-    background-image: url("/images/slider-bg1.png");
+    background-color: #9a5007;
     background-size: 100% 100%;
     z-index: 2;
   }
@@ -380,6 +380,7 @@ a:focus {
 // about section
 
 .about_section {
+  background-color: #fedf1b;
   .detail-box {
     p {
       color: $textCol;
@@ -624,7 +625,7 @@ a:focus {
   }
 
   .client_container {
-    background-image: url("/images/client-bg.png");
+    background-color: #9a5007;
     background-size: 90% 100%;
     background-position: bottom right;
     background-repeat: no-repeat;
