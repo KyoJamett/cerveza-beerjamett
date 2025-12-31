@@ -8,8 +8,16 @@ $textCol: #6c6c6c;
   font-family: "Poppins", sans-serif;
 }
 
+@font-face {
+  font-family: "Peanuts";
+  src: url(/src/assets/fonts/peanuts.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @mixin second-font {
-  font-family: "Pacifico", cursive;
+  font-family: "Peanuts", cursive;
 }
 
 @mixin hero_btn($col1, $col2, $pad1, $pad2, $bRadius) {
