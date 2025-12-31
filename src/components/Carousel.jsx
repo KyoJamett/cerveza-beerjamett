@@ -3,18 +3,18 @@ import { Link } from "react-router-dom";
 
 const items = [
   {
-    name: "Chocolate",
-    nameSpan: "Yummy",
+    name: "Cerveza",
+    nameSpan: "Artesanal",
     img: "images/slider-img.png",
   },
   {
-    name: "Chocolate",
-    nameSpan: "Yummy",
+    name: "Tradición",
+    nameSpan: "Liguana",
     img: "images/slider-img.png",
   },
   {
-    name: "Chocolate",
-    nameSpan: "Yummy",
+    name: "Elaborada con",
+    nameSpan: "Orgullo",
     img: "images/slider-img.png",
   },
 ];
@@ -30,7 +30,7 @@ const CarouselCard = ({ item }) => {
               <span>{item.nameSpan}</span>
             </h1>
             <Link to="/read-more">
-              <span>Read More</span>
+              <span>Leer más</span>
               <img src="images/white-arrow.png" alt="arrow" />
             </Link>
           </div>
@@ -54,7 +54,7 @@ const CustomPrevArrow = ({ onClick }) => {
       aria-label="Previous slide"
     >
       <i className="fa fa-arrow-left" aria-hidden="true"></i>
-      <span className="visually-hidden">Previous</span>
+      <span className="visually-hidden">Previo</span>
     </button>
   );
 };
@@ -68,7 +68,7 @@ const CustomNextArrow = ({ onClick }) => {
       aria-label="Next slide"
     >
       <i className="fa fa-arrow-right" aria-hidden="true"></i>
-      <span className="visually-hidden">Next</span>
+      <span className="visually-hidden">Siguiente</span>
     </button>
   );
 };

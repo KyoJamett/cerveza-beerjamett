@@ -93,10 +93,11 @@ export const Products = () => {
       <section className="chocolate_section ">
         <div className="container">
           <div className="heading_container">
-            <h2>Our chocolate products</h2>
+            <h2>Nuestras variedades</h2>
             <p>
-              Many desktop publishing packages and web pagend web page editors
-              now use Lorem Ipsum as their
+              Desde refrescantes lagers hasta robustas porters, nuestras
+              variedades ofrecen una experiencia para cada paladar. Escoge tu
+              favorita!
             </p>
           </div>
         </div>

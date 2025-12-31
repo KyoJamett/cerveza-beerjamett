@@ -5,7 +5,7 @@ export const Navbar = () => {
         <div className="container-fluid">
           <nav className="navbar navbar-expand-lg custom_nav-container ">
             <a className="navbar-brand" href="index.html">
-              ChocoLux
+              BeerJamett
             </a>
             <button
               className="navbar-toggler"
@@ -32,22 +32,22 @@ export const Navbar = () => {
                 <li className="nav-item">
                   <a className="nav-link" href="about.html">
                     {" "}
-                    About
+                    Quienes Somos
                   </a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="chocolate.html">
-                    Chocolates
+                    Cervezas
                   </a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="testimonial.html">
-                    Testimonial
+                    Nuestros clientes
                   </a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="contact.html">
-                    Contact Us
+                    Contacto
                   </a>
                 </li>
               </ul>

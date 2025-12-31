@@ -84,7 +84,7 @@ export const Clients = () => {
             <div className="col-lg-6 px-0">
               <div className="client_container">
                 <div className="heading_container">
-                  <h2>Testimonial</h2>
+                  <h2>Ellos ya la probaron</h2>
                 </div>
                 <Slider {...settings}>
                   {clients.map((client) => {

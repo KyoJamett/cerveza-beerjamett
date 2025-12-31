@@ -3,36 +3,49 @@ export const Contact = () => {
     <>
       <section className="contact_section layout_padding">
         <div className="container-fluid">
-          <div className="row">
-            <div className="col-md-5 col-lg-4 offset-md-1 offset-lg-2">
-              <div className="form_container">
-                <div className="heading_container">
-                  <h2>Contact Us</h2>
-                </div>
-                <form action="">
-                  <div>
-                    <input type="text" placeholder="Full Name " />
-                  </div>
-                  <div>
-                    <input type="text" placeholder="Phone number" />
-                  </div>
-                  <div>
-                    <input type="email" placeholder="Email" />
-                  </div>
-                  <div>
-                    <input
-                      type="text"
-                      className="message-box"
-                      placeholder="Message"
-                    />
-                  </div>
-                  <div className="d-flex ">
-                    <button>SEND NOW</button>
-                  </div>
-                </form>
+          <div className="heading_container">
+            <h2 className="text-center">Nuestras redes</h2>
+          </div>
+          <div className="row g-5 mb-5">
+            <div
+              className="col-md-4 text-center"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div className="btn-square mx-auto mb-3">
+                <i className="fa fa-envelope fa-2x text-black"></i>
               </div>
+              <p className="mb-2">mail@gmail.com</p>
+              {/* <p className="mb-0">support@example.com</p> */}
             </div>
-            <div className="col-md-6  px-0">
+            <div
+              className="col-md-4 text-center"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div className="btn-square mx-auto mb-3">
+                <i className="bi bi-whatsapp fa-2x text-black"></i>
+              </div>
+              <p className="mb-2">+569 - 59421991</p>
+              {/* <p className="mb-0">+012 345 67890</p> */}
+            </div>
+            <div
+              className="col-md-4 text-center"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div className="btn-square mx-auto mb-3">
+                <i className="bi bi-instagram fa-2x text-black"></i>
+              </div>
+              <p className="mb-2">@beerjamett</p>
+              {/*<p className="mb-0">New York, USA</p>*/}
+            </div>
+          </div>
+          <div className="chocolate_section">
+            <div className="row g-5 mb-4 px-0" align="center">
+              <div className="heading_container">
+                <h2>Venga a visitarnos</h2>
+              </div>
               <div className="map_container">
                 <div className="map">
                   <iframe

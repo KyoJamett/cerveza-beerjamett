@@ -6,18 +6,22 @@ export const About = () => {
           <div className="row">
             <div className="col-md-6">
               <div className="detail-box">
-                <div className="heading_container">
-                  <h2>About Our Company</h2>
+                <div className="heading_container pb-3">
+                  <h2>Quienes somos</h2>
                 </div>
                 <p>
-                  Lorem Ipsum is that it has a more-or-less normal distribution
-                  of letters, as opposed to using 'Content here, content here',
-                  making it look like readable English. Many desktop publishing
-                  packages and web pagend web page editors now use Lorem Ipsum
-                  as their default model text,{" "}
+                  Más que una cervecería, en Beerjamett somos una comunidad de
+                  amantes de la buena cerveza. Fundada en La Ligua, nuestra
+                  misión es compartir la experiencia de la cerveza artesanal de
+                  calidad con cada persona que cruza nuestras puertas. Creemos
+                  en el poder de reunir a las personas alrededor de una buena
+                  cerveza y en crear momentos memorables. Cada cerveza que
+                  producimos es el resultado de incontables horas de
+                  experimentación, pasión y el deseo de ofrecer algo
+                  verdaderamente especial a nuestra comunidad.
                 </p>
                 <a href="#" onClick={(e) => e.preventDefault()}>
-                  <span>Read More</span>
+                  <span>Leer más</span>
                   <img
                     src="images/color-arrow.png"
                     alt="arrow"
