@@ -766,7 +766,7 @@ a:focus {
   .map_container {
     height: 345px;
     overflow: hidden;
-    margin-top: 80px;
+    margin-top: 20px;
 
     .map {
       height: 100%;
@@ -837,6 +837,7 @@ a:focus {
       border: 1px solid $white;
       color: $white;
       margin-right: 10px;
+      font-size: 1.5rem;
     }
   }
 

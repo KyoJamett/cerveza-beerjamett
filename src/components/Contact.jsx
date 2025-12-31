@@ -12,13 +12,15 @@ export const Contact = () => {
             <div
               className="col-md-4 text-center"
               data-aos="fade-up"
-              data-aos-delay="300"
+              data-aos-delay="400"
             >
               <div className="btn-square mx-auto mb-3">
-                <i className="fa fa-envelope fa-2x text-black"></i>
+                <i
+                  className="bi bi-instagram text-black"
+                  style={{ fontSize: "3rem" }}
+                ></i>
               </div>
-              <p className="mb-2">mail@gmail.com</p>
-              {/* <p className="mb-0">support@example.com</p> */}
+              <p className="mb-2">@beerjamett</p>
             </div>
             <div
               className="col-md-4 text-center"
@@ -26,7 +28,10 @@ export const Contact = () => {
               data-aos-delay="400"
             >
               <div className="btn-square mx-auto mb-3">
-                <i className="bi bi-whatsapp fa-2x text-black"></i>
+                <i
+                  className="bi bi-whatsapp text-black"
+                  style={{ fontSize: "3rem" }}
+                ></i>
               </div>
               <p className="mb-2">+569 - 59421991</p>
               {/* <p className="mb-0">+012 345 67890</p> */}
@@ -34,15 +39,18 @@ export const Contact = () => {
             <div
               className="col-md-4 text-center"
               data-aos="fade-up"
-              data-aos-delay="400"
+              data-aos-delay="300"
             >
               <div className="btn-square mx-auto mb-3">
-                <i className="bi bi-instagram fa-2x text-black"></i>
+                <i
+                  className="bi bi-envelope text-black"
+                  style={{ fontSize: "3rem" }}
+                ></i>
               </div>
-              <p className="mb-2">@beerjamett</p>
-              {/*<p className="mb-0">New York, USA</p>*/}
+              <p className="mb-2">mail@gmail.com</p>
             </div>
           </div>
+
           <div className="chocolate_section">
             <div className="row g-5 px-0" align="center">
               <div className="heading_container">
