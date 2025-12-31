@@ -33,7 +33,7 @@ export const About = () => {
             <div className="col-md-6">
               <div className="img-box">
                 <img
-                  src="images/about-img.png"
+                  src="images/about-img.jpg"
                   alt="aboutUs"
                   className="img-fluid"
                 />

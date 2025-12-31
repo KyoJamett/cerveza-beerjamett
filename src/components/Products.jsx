@@ -26,18 +26,6 @@ const store = [
     price: 5.0,
     img: "images/cerveza-4.png",
   },
-  {
-    name: "Yummy",
-    spanName: "Raven",
-    price: 5.0,
-    img: "images/chocolate2.png",
-  },
-  {
-    name: "Yummy",
-    spanName: "Raven",
-    price: 5.0,
-    img: "images/chocolate3.png",
-  },
 ];
 
 const ProductCard = ({ product }) => {
