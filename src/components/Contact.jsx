@@ -3,8 +3,10 @@ export const Contact = () => {
     <>
       <section className="contact_section layout_padding">
         <div className="container-fluid">
-          <div className="heading_container">
-            <h2 className="text-center">Nuestras redes</h2>
+          <div className="chocolate_section">
+            <div className="heading_container">
+              <h2 className="text-center">Nuestras redes</h2>
+            </div>
           </div>
           <div className="row g-5 mb-5">
             <div
@@ -42,7 +44,7 @@ export const Contact = () => {
             </div>
           </div>
           <div className="chocolate_section">
-            <div className="row g-5 mb-4 px-0" align="center">
+            <div className="row g-5 px-0" align="center">
               <div className="heading_container">
                 <h2>Venga a visitarnos</h2>
               </div>

@@ -92,7 +92,7 @@ export const Products = () => {
     <>
       <section className="chocolate_section ">
         <div className="container">
-          <div className="heading_container">
+          <div className="heading_container pt-4">
             <h2>Nuestras variedades</h2>
             <p>
               Desde refrescantes lagers hasta robustas porters, nuestras
