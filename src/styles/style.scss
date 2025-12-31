@@ -302,14 +302,15 @@ a:focus {
   &:after {
     content: "";
     position: absolute;
-    top: 25px;
-    right: 45px;
-    width: 550px;
-    height: 550px;
-    background-image: url("/images/slider-bg2.png");
+    //top: 25px;
+    //right: 45px;
+    //width: 550px;
+    //height: 550px;
+    background-image: url("/images/slider-bg2.jpg");
     background-size: cover;
     background-position: bottom right;
     z-index: 1;
+    opacity: 0.3;
   }
 
   .detail_box {
