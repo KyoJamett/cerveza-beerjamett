@@ -489,16 +489,14 @@ a:focus {
         font-size: 14px;
       }
     }
-
-    &:hover {
-      border-color: transparent;
-      box-shadow: 0 0 10px 0 rgba($color: #000000, $alpha: 0.15);
-
-      .detail-box {
-        visibility: visible;
-        opacity: 1;
-      }
+    .detail-box {
+      visibility: visible;
+      opacity: 1;
     }
+  }
+
+  .slick-dots {
+    bottom: -80px;
   }
 
   .slick-prev,
@@ -508,7 +506,7 @@ a:focus {
     background-color: $white;
     color: $primary2;
     top: initial;
-    bottom: 0px;
+    bottom: -50px;
     box-shadow: 0 0 5px 0 rgba($color: #000000, $alpha: 0.15);
 
     &:hover {
