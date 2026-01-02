@@ -9,15 +9,15 @@ $textCol: #6c6c6c;
 }
 
 @font-face {
-  font-family: "Peanuts";
-  src: url(/src/assets/fonts/peanuts.ttf) format("truetype");
+  font-family: "Mangala";
+  src: url(/src/assets/fonts/vrinda_regular.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @mixin second-font {
-  font-family: "Peanuts", cursive;
+  font-family: "Mangala", cursive;
 }
 
 @mixin hero_btn($col1, $col2, $pad1, $pad2, $bRadius) {
@@ -282,6 +282,7 @@ a:focus {
   background-size: cover;
   background-position: top;
   color: $white;
+  max-height: 1200px;
 
   .row {
     align-items: center;
@@ -348,8 +349,15 @@ a:focus {
   }
 
   .img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
     img {
-      width: 100%;
+      width: 60%;
+      max-width: 400px;
+      height: auto;
+      object-fit: contain;
     }
   }
 
