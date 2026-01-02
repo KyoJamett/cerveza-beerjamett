@@ -12,7 +12,7 @@ export const HomePage = () => {
     <>
       <div className="main_body_content">
         <div className="hero_area">
-          <Navbar />
+          {/*<Navbar />*/}
 
           <Carousel />
 
@@ -24,7 +24,6 @@ export const HomePage = () => {
           <hr></hr>
 
           <Contact />
-
           <Info />
           <Footer />
         </div>
