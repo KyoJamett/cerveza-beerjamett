@@ -3,7 +3,7 @@ export const Contact = () => {
     <>
       <section className="contact_section layout_padding">
         <div className="container-fluid">
-          <div className="chocolate_section">
+          <div className="contact_section">
             <div className="heading_container">
               <h2 className="text-center">Nuestras redes</h2>
             </div>
@@ -33,7 +33,7 @@ export const Contact = () => {
                   style={{ fontSize: "3rem" }}
                 ></i>
               </div>
-              <p className="mb-2">+569 - 59421991</p>
+              <p className="mb-2">+569 - 9488 2951</p>
               {/* <p className="mb-0">+012 345 67890</p> */}
             </div>
             <div
@@ -47,14 +47,14 @@ export const Contact = () => {
                   style={{ fontSize: "3rem" }}
                 ></i>
               </div>
-              <p className="mb-2">mail@gmail.com</p>
+              <p className="mb-2">beerjamett@gmail.com</p>
             </div>
           </div>
 
-          <div className="chocolate_section">
+          <div className="contact_section">
             <div className="row g-5 px-0" align="center">
               <div className="heading_container">
-                <h2>Venga a visitarnos</h2>
+                <h2>Visistenos en nuestro punto de ventas!</h2>
               </div>
               <div className="map_container">
                 <div className="map">

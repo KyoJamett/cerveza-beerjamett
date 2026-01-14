@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const items = [
   {
     name: "Cerveza",
-    nameSpan: "Artesanal",
+    nameSpan: "Beerjamett",
     img: "images/slider-img.png",
   },
   {

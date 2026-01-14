@@ -122,7 +122,7 @@ a:focus {
 }
 
 .header_section {
-  background-color: #fedf1b;
+  background-color: #ffb81c;
 
   .container-fluid {
     padding-right: 25px;
@@ -295,7 +295,7 @@ a:focus {
     left: 0;
     width: 75%;
     height: 100%;
-    background-color: #9a5007;
+    background-color: #000000;
     background-size: 100% 100%;
     z-index: 2;
   }
@@ -318,7 +318,7 @@ a:focus {
     color: $white;
 
     h1 {
-      font-size: 3rem;
+      font-size: 4rem;
       font-weight: bold;
       margin-bottom: 30px;
 
@@ -399,10 +399,15 @@ a:focus {
 // about section
 
 .about_section {
-  background-color: #fedf1b;
+  background-color: #134734;
+
+  .heading_container {
+    color: $white;
+  }
+
   .detail-box {
     p {
-      color: $textCol;
+      color: $white;
     }
 
     a {
@@ -429,6 +434,10 @@ a:focus {
       width: 100%;
     }
   }
+
+  span {
+    color: $white;
+  }
 }
 
 // end about section
@@ -436,14 +445,13 @@ a:focus {
 // chocolate section
 
 .chocolate_section {
+  background-color: #000000;
+  color: $white;
+
   .heading_container {
     align-items: center;
     text-align: center;
     margin-bottom: 25px;
-  }
-
-  .chocolate_container {
-    padding-bottom: 75px;
   }
 
   .box {
@@ -471,7 +479,7 @@ a:focus {
 
     .detail-box {
       width: 100%;
-      background-color: $primary1;
+      background-color: #ff5201;
       color: $white;
       padding: 15px;
       margin-top: 10px;
@@ -518,7 +526,7 @@ a:focus {
     box-shadow: 0 0 5px 0 rgba($color: #000000, $alpha: 0.15);
 
     &:hover {
-      background-color: $primary1;
+      background-color: #ff5201;
 
       &:before {
         color: $white;
@@ -541,7 +549,7 @@ a:focus {
     font-family: "FontAwesome";
     position: relative;
     z-index: 2;
-    color: $primary2;
+    color: #ff5201;
     font-size: 14px;
     opacity: 1;
   }
@@ -642,7 +650,7 @@ a:focus {
   }
 
   .client_container {
-    background-color: #9a5007;
+    background-color: #fe0001;
     background-size: 90% 100%;
     background-position: bottom right;
     background-repeat: no-repeat;
@@ -954,3 +962,31 @@ a:focus {
 }
 
 // end footer section
+
+// contact section
+
+.contact_section {
+  .heading_container {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .map_container {
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .map {
+    width: 100%;
+    max-width: 900px;
+
+    iframe {
+      width: 100%;
+      height: 450px;
+      border: 0;
+    }
+  }
+}

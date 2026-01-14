@@ -23,7 +23,7 @@ export const About = () => {
                 <a href="#" onClick={(e) => e.preventDefault()}>
                   <span>Leer más</span>
                   <img
-                    src="images/color-arrow.png"
+                    src="images/white-arrow.png"
                     alt="arrow"
                     className="img-fluid"
                   />

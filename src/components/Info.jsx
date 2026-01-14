@@ -10,15 +10,15 @@ export const Info = () => {
                 <a href="">
                   <i className="fa-solid fa-map-marker-alt"></i>
 
-                  <span>Location</span>
+                  <span>Tobías Cabrera, sitio 12, La Ligua</span>
                 </a>
                 <a href="">
                   <i className="fa-solid fa-phone"></i>
-                  <span>Call +01 1234567890</span>
+                  <span>+569 - 9488 2951</span>
                 </a>
                 <a href="">
                   <i className="fa fa-envelope"></i>
-                  <span>demo@gmail.com</span>
+                  <span>beerjamett@gmail.com</span>
                 </a>
               </div>
             </div>
