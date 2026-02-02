@@ -188,3 +188,29 @@
     max-width: 1170px;
   }
 }
+
+@media (max-width: 767px) {
+  .chocolate_section .box {
+    margin: 10px 5px; /* Reduce márgenes */
+  }
+
+  .chocolate_section .box .img-box {
+    width: 150px; /* Reduce tamaño de imagen */
+    height: 150px;
+  }
+
+  .chocolate_section .slick-dots {
+    bottom: -80px; /* Ajusta posición de dots */
+  }
+}
+
+@media (max-width: 576px) {
+  .chocolate_section .box {
+    margin: 5px;
+  }
+
+  .chocolate_section .box .img-box {
+    width: 180px;
+    height: 180px;
+  }
+}

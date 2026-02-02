@@ -3,27 +3,31 @@ import { Link } from "react-router-dom";
 
 const store = [
   {
-    name: "Yummy",
+    id: 1,
+    name: "Porter",
     spanName: "Raven",
-    price: 5.0,
+    price: 3,
     img: "images/cerveza-1.png",
   },
   {
-    name: "Yummy",
+    id: 2,
+    name: "Pilsen Lager",
     spanName: "Raven",
-    price: 5.0,
+    price: 3,
     img: "images/cerveza-2.png",
   },
   {
-    name: "Yummy",
+    id: 3,
+    name: "Scottish Ale",
     spanName: "Raven",
-    price: 5.0,
+    price: 3,
     img: "images/cerveza-3.png",
   },
   {
-    name: "Yummy",
+    id: 4,
+    name: "English Pale Ale",
     spanName: "Raven",
-    price: 5.0,
+    price: 3,
     img: "images/cerveza-4.png",
   },
 ];
@@ -42,8 +46,8 @@ const ProductCard = ({ product }) => {
         <h6>
           {product.name} <span>{product.type}</span>
         </h6>
-        <h5>${product.price.toFixed(2)}</h5>
-        <Link to={`/product/${product.id}`}>BUY NOW</Link>
+        <h5>${product.price.toFixed(3)}</h5>
+        <Link to={`/product/${product.id}`}>COMPRAR</Link>
       </div>
     </div>
   );
@@ -54,14 +58,22 @@ export const Products = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
     pauseOnHover: true,
+    initialSlide: 0,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 992,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -72,10 +84,12 @@ export const Products = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          dots: true,
         },
       },
     ],
   };
+
   return (
     <>
       <section className="chocolate_section ">
@@ -93,7 +107,7 @@ export const Products = () => {
           <div className="chocolate_container">
             <Slider {...settings}>
               {store.map((product) => {
-                return <ProductCard key={product.key} product={product} />;
+                return <ProductCard key={product.id} product={product} />;
               })}
             </Slider>
           </div>

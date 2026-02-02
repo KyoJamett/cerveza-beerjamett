@@ -12,17 +12,10 @@ export const HomePage = () => {
     <>
       <div className="main_body_content">
         <div className="hero_area">
-          {/*<Navbar />*/}
-
           <Carousel />
-
           <About />
-
           <Products />
-          <hr></hr>
           <Clients />
-          <hr></hr>
-
           <Contact />
           <Info />
           <Footer />
