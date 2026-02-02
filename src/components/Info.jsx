@@ -46,7 +46,7 @@ export const Info = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-6 col-lg-3">
+            {/*<div className="col-md-6 col-lg-3">
               <div className="info_insta">
                 <h4>Nuestras redes</h4>
                 <div className="social_box">
@@ -64,7 +64,7 @@ export const Info = () => {
                   </a>
                 </div>
               </div>
-            </div>
+            </div>*/}
           </div>
         </div>
       </section>

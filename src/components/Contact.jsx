@@ -9,7 +9,10 @@ export const Contact = () => {
             </div>
           </div>
           <div className="row g-5 mb-5">
-            <div
+            <a
+              href="https://www.instagram.com/beerjamett/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="col-md-4 text-center"
               data-aos="fade-up"
               data-aos-delay="400"
@@ -21,8 +24,11 @@ export const Contact = () => {
                 ></i>
               </div>
               <p className="mb-2">@beerjamett</p>
-            </div>
-            <div
+            </a>
+            <a
+              href="https://wa.me/56994882951"
+              target="_blank"
+              rel="noopener noreferrer"
               className="col-md-4 text-center"
               data-aos="fade-up"
               data-aos-delay="400"
@@ -34,9 +40,9 @@ export const Contact = () => {
                 ></i>
               </div>
               <p className="mb-2">+569 - 9488 2951</p>
-              {/* <p className="mb-0">+012 345 67890</p> */}
-            </div>
-            <div
+            </a>
+            <a
+              href="mailto:beerjamett@gmail.com?subject=Consulta&body=Hola,%20quisiera%20hacer%20una%20consulta."
               className="col-md-4 text-center"
               data-aos="fade-up"
               data-aos-delay="300"
@@ -48,7 +54,7 @@ export const Contact = () => {
                 ></i>
               </div>
               <p className="mb-2">beerjamett@gmail.com</p>
-            </div>
+            </a>
           </div>
 
           <div className="contact_section">
