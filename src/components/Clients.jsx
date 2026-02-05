@@ -69,7 +69,7 @@ export const Clients = () => {
   };
   return (
     <>
-      <section className="client_section">
+      <section id="clients" className="client_section">
         <div className="container-fluid">
           <div className="row">
             <div className="col-lg-4 ms-auto">

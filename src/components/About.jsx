@@ -1,7 +1,7 @@
 export const About = () => {
   return (
     <>
-      <section className="about_section layout_padding ">
+      <section id="aboutUs" className="about_section layout_padding ">
         <div className="container  ">
           <div className="row">
             <div className="col-md-6">

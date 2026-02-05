@@ -1,16 +1,18 @@
+import { HashLink } from "react-router-hash-link";
+
 export const Navbar = () => {
   return (
     <>
       <header className="header_section">
         <div className="container-fluid">
           <nav className="navbar navbar-expand-lg custom_nav-container ">
-            <a className="navbar-brand" href="index.html">
+            <HashLink smooth to="#home" className="navbar-brand">
               <img
                 src="images/logo.png"
                 alt="BeerJamett"
                 className="navbar-logo"
               />
-            </a>
+            </HashLink>
             <button
               className="navbar-toggler"
               type="button"
@@ -29,30 +31,34 @@ export const Navbar = () => {
             >
               <ul className="navbar-nav ms-auto">
                 <li className="nav-item active">
-                  <a className="nav-link" href="index.html">
+                  <HashLink
+                    className="nav-item nav-link active"
+                    smooth
+                    to="#home"
+                  >
                     Home <span className="visually-hidden">(current)</span>
-                  </a>
+                  </HashLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="about.html">
+                  <HashLink className="nav-item nav-link" smooth to="#aboutUs">
                     {" "}
                     Quienes Somos
-                  </a>
+                  </HashLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="chocolate.html">
+                  <HashLink className="nav-item nav-link" smooth to="#products">
                     Cervezas
-                  </a>
+                  </HashLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="testimonial.html">
+                  <HashLink className="nav-item nav-link" smooth to="#clients">
                     Nuestros clientes
-                  </a>
+                  </HashLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="contact.html">
+                  <HashLink className="nav-item nav-link" smooth to="#contact">
                     Contacto
-                  </a>
+                  </HashLink>
                 </li>
               </ul>
             </div>

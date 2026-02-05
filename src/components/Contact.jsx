@@ -1,7 +1,7 @@
 export const Contact = () => {
   return (
     <>
-      <section className="contact_section layout_padding">
+      <section id="contact" className="contact_section layout_padding">
         <div className="container-fluid">
           <div className="contact_section">
             <div className="heading_container">
@@ -39,7 +39,7 @@ export const Contact = () => {
                   style={{ fontSize: "3rem" }}
                 ></i>
               </div>
-              <p className="mb-2">+569 - 9488 2951</p>
+              <p className="mb-2">+56 9 9488 2951</p>
             </a>
             <a
               href="mailto:beerjamett@gmail.com?subject=Consulta&body=Hola,%20quisiera%20hacer%20una%20consulta."

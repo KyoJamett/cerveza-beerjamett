@@ -101,7 +101,7 @@ export const Products = () => {
 
   return (
     <>
-      <section className="chocolate_section ">
+      <section id="products" className="chocolate_section ">
         <div className="container">
           <div className="heading_container pt-4">
             <h2>Nuestras variedades</h2>
