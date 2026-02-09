@@ -33,7 +33,7 @@ const store = [
   },
 ];
 
-export const Products = () => {
+export const Products = ({ handlerOpenModal }) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -87,7 +87,13 @@ export const Products = () => {
           <div className="chocolate_container">
             <Slider {...settings}>
               {store.map((product) => {
-                return <ProductCard key={product.id} product={product} />;
+                return (
+                  <ProductCard
+                    key={product.id}
+                    product={product}
+                    handlerOpenModal={handlerOpenModal}
+                  />
+                );
               })}
             </Slider>
           </div>
