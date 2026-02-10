@@ -1002,3 +1002,59 @@ a:focus {
     }
   }
 }
+
+//------estilos modal
+/* CSS personalizado para el botón de cierre */
+.btn-close {
+  width: 25px; /* Ajusta el tamaño del botón */
+  height: 25px; /* Ajusta el tamaño del botón */
+  background-color: red; /* Color de fondo rojo */
+  border-radius: 50%; /* Hacer que sea redondeado */
+  border: none; /* Eliminar el borde predeterminado */
+}
+
+.btn-close::before {
+  color: white; /* Color del icono de cierre */
+}
+
+.abrir-modal {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+.animacion {
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

@@ -25,7 +25,7 @@ export const ProductCard = ({ id, product, handlerOpenModal }) => {
           style={{ cursor: "pointer" }}
           className="btn btn-info rounded-pill py-2 px-4 m-2"
         >
-          Ver más <i className="fa fa-cart-plus ms-2"></i>
+          Ver más <i className="fa fa-eye ms-2"></i>
         </a>
         <a
           href={`https://wa.me/56994882951?text=${encodeURIComponent(mensaje)}`}
