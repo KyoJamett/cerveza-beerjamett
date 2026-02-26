@@ -20,14 +20,14 @@ export const About = () => {
                   experimentación, pasión y el deseo de ofrecer algo
                   verdaderamente especial a nuestra comunidad.
                 </p>
-                <a href="#" onClick={(e) => e.preventDefault()}>
+                {/*<a href="#" onClick={(e) => e.preventDefault()}>
                   <span>Leer más</span>
                   <img
                     src="images/white-arrow.png"
                     alt="arrow"
                     className="img-fluid"
                   />
-                </a>
+                </a>*/}
               </div>
             </div>
             <div className="col-md-6" data-aos="fade" data-aos-delay="500">

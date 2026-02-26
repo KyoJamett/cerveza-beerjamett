@@ -29,10 +29,10 @@ const CarouselCard = ({ item }) => {
               {item.name} <br />
               <span>{item.nameSpan}</span>
             </h1>
-            <Link to="/read-more">
+            {/*<Link to="/read-more">
               <span>Leer más</span>
               <img src="images/white-arrow.png" alt="arrow" />
-            </Link>
+            </Link>*/}
           </div>
         </div>
         <div className="col-md-4 ms-auto">
