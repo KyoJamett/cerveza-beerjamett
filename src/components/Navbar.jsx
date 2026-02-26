@@ -51,8 +51,8 @@ export const Navbar = () => {
                   </HashLink>
                 </li>
                 <li className="nav-item">
-                  <HashLink className="nav-item nav-link" smooth to="#clients">
-                    Nuestros clientes
+                  <HashLink className="nav-item nav-link" smooth to="#about">
+                    Nuestro sello
                   </HashLink>
                 </li>
                 <li className="nav-item">

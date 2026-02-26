@@ -8,6 +8,7 @@ import { Info } from "../components/Info";
 import { Navbar } from "../components/Navbar";
 import { ProductModal } from "../components/ProductModal";
 import { Products } from "../components/Products";
+import { BackToTop } from "../components/BackToTop";
 
 const initialProductSelected = {
   id: 0,
@@ -58,6 +59,7 @@ export const HomePage = () => {
           <Footer />
         </div>
       </div>
+      <BackToTop />
     </>
   );
 };
