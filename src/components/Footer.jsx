@@ -12,6 +12,17 @@ export const Footer = () => {
             </p>
           </div>
         </div>
+        <div className="text-center py-3 small text-muted">
+          Este sitio usa Google Analytics para mejorar tu experiencia.{" "}
+          <a
+            href="https://policies.google.com/technologies/partner-sites"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted"
+          >
+            Más información
+          </a>
+        </div>
       </div>
     </footer>
   );
