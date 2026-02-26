@@ -4,7 +4,7 @@ export const About = () => {
       <section id="aboutUs" className="about_section layout_padding ">
         <div className="container  ">
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-6" data-aos="fade" data-aos-delay="100">
               <div className="detail-box">
                 <div className="heading_container pb-3">
                   <h2>Quienes somos</h2>
@@ -30,7 +30,7 @@ export const About = () => {
                 </a>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6" data-aos="fade" data-aos-delay="500">
               <div className="img-box">
                 <img
                   src="images/about-img.jpg"

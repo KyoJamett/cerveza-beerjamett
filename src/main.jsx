@@ -1,4 +1,4 @@
-import { StrictMode } from "react";
+import { StrictMode, useEffect } from "react";
 import { createRoot } from "react-dom/client";
 import { HashRouter } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
@@ -11,11 +11,25 @@ import "./styles/style.css";
 import "./styles/style.scss";
 import "./styles/responsive.css";
 import App from "./App.jsx";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <HashRouter>
-      <App />
-    </HashRouter>
-  </StrictMode>
-);
+const Root = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+      mirror: true,
+      offset: 100,
+    });
+  }, []);
+
+  return (
+    <StrictMode>
+      <HashRouter>
+        <App />
+      </HashRouter>
+    </StrictMode>
+  );
+};
+createRoot(document.getElementById("root")).render(<Root />);

@@ -105,7 +105,11 @@ export const Products = ({ handlerOpenModal }) => {
     <>
       <section id="products" className="chocolate_section ">
         <div className="container">
-          <div className="heading_container pt-4">
+          <div
+            className="heading_container pt-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <h2>Nuestras variedades</h2>
             <p>
               Desde refrescantes lagers hasta robustas porters, nuestras
@@ -115,7 +119,11 @@ export const Products = ({ handlerOpenModal }) => {
           </div>
         </div>
         <div className="container">
-          <div className="chocolate_container">
+          <div
+            className="chocolate_container"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <Slider {...settings}>
               {store.map((product) => {
                 return (

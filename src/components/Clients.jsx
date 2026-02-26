@@ -23,7 +23,7 @@ export const Clients = () => {
                 <img
                   className="img-fluid bg-white w-100 mt-3"
                   data-aos="fade"
-                  data-aos-delay="400"
+                  data-aos-delay="300"
                   src="images/gallery-04.jpg"
                   alt=""
                 />
@@ -32,21 +32,21 @@ export const Clients = () => {
                 <img
                   className="img-fluid bg-white w-50 mb-3"
                   data-aos="fade"
-                  data-aos-delay="300"
+                  data-aos-delay="400"
                   src="images/gallery-03.jpeg"
                   alt=""
                 />
                 <img
                   className="img-fluid bg-white w-100"
                   data-aos="fade"
-                  data-aos-delay="400"
+                  data-aos-delay="500"
                   src="images/gallery-04.jpg"
                   alt=""
                 />
                 <img
                   className="img-fluid bg-white w-100 mb-3 mt-3"
                   data-aos="fade"
-                  data-aos-delay="100"
+                  data-aos-delay="600"
                   src="images/gallery-01.jpg"
                   alt=""
                 />
