@@ -24,7 +24,7 @@ export const Clients = () => {
                   className="img-fluid bg-white w-100 mt-3"
                   data-aos="fade"
                   data-aos-delay="300"
-                  src="images/gallery-04.jpg"
+                  src="images/gallery-05.jpg"
                   alt=""
                 />
               </div>
