@@ -296,8 +296,12 @@ a:focus {
     width: 75%;
     height: 100%;
     background-color: #4b5320;
-    background-size: 100% 100%;
+    background-image: var(--bg-image); // Usa la variable CSS
+    background-size: cover; // Cambia a cover para que se vea bien
+    background-position: center; // Centra la imagen
+    background-blend-mode: multiply;
     z-index: 2;
+    transition: background-image 0.5s ease-in-out;
   }
 
   &:after {

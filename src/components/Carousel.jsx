@@ -1,21 +1,25 @@
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const items = [
   {
     name: "Cerveza",
     nameSpan: "Beerjamett",
     img: "images/slider-img.png",
+    bgImage: "images/slider-bg-01.jpg", // Nueva imagen de fondo
   },
   {
     name: "Tradición",
     nameSpan: "Liguana",
     img: "images/slider-img.png",
+    bgImage: "images/slider-bg-02.jpg", // Nueva imagen de fondo
   },
   {
     name: "Elaborada con",
     nameSpan: "Orgullo",
     img: "images/slider-img.png",
+    bgImage: "images/slider-bg-03.jpeg", // Nueva imagen de fondo
   },
 ];
 
@@ -74,6 +78,8 @@ const CustomNextArrow = ({ onClick }) => {
 };
 
 export const Carousel = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
   const settings = {
     dots: false, // Cambiado a false para mantener diseño original
     infinite: true,
@@ -86,10 +92,16 @@ export const Carousel = () => {
     arrows: true,
     prevArrow: <CustomPrevArrow />,
     nextArrow: <CustomNextArrow />,
+    beforeChange: (current, next) => setCurrentSlide(next),
   };
 
   return (
-    <section className="slider_section">
+    <section
+      className="slider_section"
+      style={{
+        "--bg-image": `url(${items[currentSlide].bgImage})`,
+      }}
+    >
       <div id="customCarousel1">
         <Slider {...settings}>
           {items.map((item) => (
