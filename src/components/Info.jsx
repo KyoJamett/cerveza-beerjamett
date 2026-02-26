@@ -34,7 +34,7 @@ export const Info = () => {
                 <h6 className="text-light">Cerrado</h6>
               </div>
             </div>
-            <div className="col-md-6 col-lg-3">
+            {/*<div className="col-md-6 col-lg-3">
               <div className="info_links">
                 <h4>Menu</h4>
                 <div className="info_links_menu">
@@ -45,7 +45,7 @@ export const Info = () => {
                   <a href="contact.html">Contacto</a>
                 </div>
               </div>
-            </div>
+            </div>*/}
             {/*<div className="col-md-6 col-lg-3">
               <div className="info_insta">
                 <h4>Nuestras redes</h4>
